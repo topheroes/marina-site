@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    --main-content-width: 700px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(img/illustrasi_header.png), url(img/Vector_Smart_Object2.png), url(img/squares.png);
+
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    
+    background-position: 100% 0,  -5% 30%, 110% 60%;
+    
+}
+
+.first-block{
+    padding-top: 50px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-right: 260px;
+}
+
+header ul a{
+    text-decoration: none;
+    color: white;
+
+    width: 87px;
+    height: 17px;
+    color: #ffffff;
+    font-family: "Nunito Sans - Semi Bold";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 50.08px;
+    text-align: right;
+
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+
+    transition: all 0.1s ease-in-out;
+}
+
+
+header ul a:hover{
+    opacity: 0.5;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 1100px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3em;
+    padding-left: 3em;
+    
+    background-repeat: no-repeat;
+    background-position: 0 200%;
+    overflow: visible;
+}
+.main__description{
+    
+    width: var(--main-content-width);
+    color: #112d58;
+    font-family: "Poppins - Semi Bold";
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 50px;
+    text-align: right;
+
+    
+}
+
+.main__search{
+    width: var(--main-content-width);
+    display: flex;
+    flex-direction: column;
+    max-width: 655px;
+    gap: 0.5em;
+    position: relative;
+  
+}
+
+
+
+.main__search::after{
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #ffa024;
+    position: absolute;
+    border-radius: 30px;
+    right: 10px;
+    top: 30%;
+    background-image: url(img/magnifier.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: all 0.1s ease-in-out;
+}
+
+
+.main__search:hover:after{
+    opacity: 0.5;
+}
+
+.main__search input{
+    
+
+    height: 78px;
+    box-shadow: 0 16px 122px rgba(211, 212, 212, 0.68);
+    border-radius: 39px;
+    background-color: #ffffff;
+    opacity: 0.8;
+}
+
+.work-and-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+
+.work-and-skills h1,
+.test h1{
+    /* Style for "Browse job" */
+
+    color: #112d58;
+    font-family: Poppins;
+    font-size: 56px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 60px;
+    text-align: center;
+}
+
+.work-and-skills .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.work-and-skills__card{
+
+    width: 349px;
+    height: 388px;
+    box-shadow: 0 20px 99px 7px rgba(33, 138, 218, 0.12);
+    border-radius: 30px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+
+}
+
+.work-and-skills__card__text{
+    
+    color: #254c86;
+    
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 46.7px;
+    text-align: center;
+
+}
+
+.test{
+    margin-top: 10em;
+    height: 1000px;
+}
+
+.contacts{
+    height: 1200px;
+    background-image: url(img/footer2.png), url(img/FOOTER_copy.png), url(img/FOOTER.png);
+    
+    
+    background-repeat: no-repeat, no-repeat, no-repeat;
+
+    background-size: cover, cover, 120% 120%;
+    background-position: 0 0, 0 0, 30% 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 55px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 81.77px;
+    text-align: right;
+    /* Text style for "Get starte" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    gap: 4em;
+}
+
+.contacts__details{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
